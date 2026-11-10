@@ -1,10 +1,10 @@
-# 🔍 Consultas SQL e Views - Spotymusic
+# Consultas SQL e Views - Spotymusic
 
 > Este documento reúne as 30 consultas SQL desenvolvidas para a base de dados **Spotymusic**, divididas entre consultas simples, junções (`INNER JOIN`, `LEFT JOIN`), subconsultas, agregações e criação de **Views**.
 
 ---
 
-## 📋 Lista de Consultas
+## Lista de Consultas
 
 1. **Exibir todas as playlists e suas músicas:**
 ```SQL
@@ -235,7 +235,7 @@ order by nomeplaylist asc;
     from playlist;
     ```
 
-## 👁️ Views Criadas no Sistema
+## Views Criadas no Sistema
 
 1. **Exibir a música mais recente cadastrada com base na data de lançamento do seu álbum:**
 ```SQL
