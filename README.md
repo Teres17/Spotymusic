@@ -1,28 +1,28 @@
-# 🎵 Spotymusic - Database Model & SQL Scripts
+# Spotymusic - Database Model & SQL Scripts
 
 > Projeto de modelagem e implementação de banco de dados relacional inspirado na plataforma Spotify, contendo scripts DDL (definição) e DML (manipulação) em SQL ANSI compatível com os principais SGBDs.
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 O **Spotymusic** é uma modelagem de banco de dados relacional projetada para gerenciar as operações fundamentais de um serviço de streaming de áudio. O projeto resolve o desafio de estruturar dados de forma normalizada para conectar artistas, álbuns, faixas, usuários, planos de assinatura, playlists e histórico de escuta.
 
-### 🎯 Principais Objetivos
+### Principais Objetivos
 * Modelar relacionamentos 1:N (ex: Artista -> Álbuns) e N:M (ex: Playlists <-> Músicas).
 * Garantir integridade referencial com uso correto de Chaves Primárias (PK) e Chaves Estrangeiras (FK).
 * Disponibilizar queries otimizadas para relatórios e consultas do sistema.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 * **Linguagem:** SQL (ANSI SQL-92)
 * **SGBDs Compatíveis:** MySQL, PostgreSQL, SQL Server, Oracle, SQLite
 * **Ferramentas Recomendadas:** DBeaver, MySQL Workbench, VS Code
 
 ---
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 O projeto foi organizado de forma modular para facilitar a navegação e a execução dos scripts:
 
@@ -39,7 +39,7 @@ Spotymusic/
 ```
 ---
 
-## 📊 Estrutura do Banco de Dados
+## Estrutura do Banco de Dados
 
 O esquema relacional é composto pelas seguintes tabelas:
 
@@ -52,7 +52,7 @@ O esquema relacional é composto pelas seguintes tabelas:
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 Siga os passos abaixo para instanciar e popular o banco de dados na sua ferramenta de preferência:
 
@@ -69,19 +69,19 @@ Siga os passos abaixo para instanciar e popular o banco de dados na sua ferramen
    ```
 2. **Criar a base de dados no seu SGBD(DDL):**
     Execute o script de criação do banco e das tabelas localizado em:
-    👉 **[`sql/schema.sql`](./sql/schema.sql)**
+     **[`sql/schema.sql`](./sql/schema.sql)**
 
 3. **Criar as Triggers e Procedures:**
     Execute as rotinas automatizadas e controle de acessos em:
-    👉 **[`sql/triggers_procedures.sql`](./sql/triggers_procedures.sql)**
+     **[`sql/triggers_procedures.sql`](./sql/triggers_procedures.sql)**
 
 4. **Popular a base de dados (DML):**
     Insira os dados iniciais de artistas, álbuns, faixas e playlists em:
-    👉 **[`sql/data.sql`](./sql/data.sql)**
+     **[`sql/data.sql`](./sql/data.sql)**
 
 5. **Configurar Utilizadores e Permissões:**
    Execute o script de gestão de acessos localizado em:
-   👉 **[`sql/usuarios_permissoes.sql`](./sql/usuarios_permissoes.sql)**
+    **[`sql/usuarios_permissoes.sql`](./sql/usuarios_permissoes.sql)**
+---
 
-✒️ Autor
 Desenvolvido por Lucas Teles (Teres17).

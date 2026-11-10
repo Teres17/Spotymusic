@@ -1,6 +1,8 @@
+-- Criando e utilizando o banco:
 create database spotymusic_127;
 use spotymusic_127;
 
+-- Criando tabelas:
 create table genero(
 id_genero int primary key auto_increment,
 nomegenero varchar(20) not null,
@@ -36,6 +38,7 @@ fk_genero int,
 foreign key (fk_album) references album(id_album) on delete cascade,
 foreign key (fk_genero) references genero(id_genero) on delete cascade);
 
+-- Criando tabelas associativas:
 create table playlist_musica(
 id_pm int primary key auto_increment,
 ordem int,
