@@ -43,14 +43,12 @@ Spotymusic/
 
 O esquema relacional é composto pelas seguintes tabelas:
 
-* **`artistas`**: Cadastro dos músicos, bandas ou criadores de conteúdo.
-* **`albuns`**: Registro de discos e EPs associados a um artista.
-* **`musicas`**: Catálogo de faixas com duração, número da faixa e vínculo ao álbum.
-* **`generos`**: Categorização musical (Pop, Rock, Hip Hop, etc.).
-* **`usuarios`**: Cadastro dos ouvintes da plataforma e seus respectivos planos.
-* **`playlists`**: Listas de reprodução criadas pelos usuários.
-* **`playlist_musicas`**: Tabela associativa (N:M) que vincula faixas às playlists com a ordem de execução.
-* **`historico_reproducao`**: Log de execuções das músicas pelos usuários para métricas e recomendações.
+* **`artista` / `artista_log`**: Cadastro e auditoria de músicos e bandas.
+* **`album`**: Registro de discos e EPs associados a um artista.
+* **`genero`**: Categorização musical.
+* **`musica` / `musica_log`**: Catálogo de faixas, duração e logs.
+* **`compositor` / `compositor_musica` / `compositor_log`**: Autoria e auditoria das faixas.
+* **`playlist` / `playlist_musica` / `playlist_log`**: Gestão de listas de reprodução e auditoria.
 
 ---
 
